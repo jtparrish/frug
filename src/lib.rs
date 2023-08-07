@@ -789,7 +789,7 @@ impl FrugInstance {
 
         // Run the loop
         event_loop.run(move |event, _, control_flow| {
-            *control_flow = ControlFlow::Wait;
+            *control_flow = ControlFlow::Poll;
 
             input.update(&event);
 
